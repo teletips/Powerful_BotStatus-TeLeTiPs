@@ -20,7 +20,7 @@
 4. `BOT_LIST` : Your bot username list without '@' (Example: teletips1bot teletips2bot teletips3bot
 5. `CHANNEL_OR_GROUP_ID` : Your channel's or group's Telegram id (Example: -1001246808642)
 6. `MESSAGE_IDS` : Telegram id(s) of message(s) from your channel or group (Example: 10 11 12)
-7. `BOT_ADMIN_IDS` : Bot admin(s) id(s) (Example: 1357907531 2468097531 3579864213) - Not Required
+7. `BOT_ADMIN_IDS` : Bot admin(s) id(s) (Example: 1357907531 2468097531 3579864213) - Not Required!
 
 <p align="center">
 <img src="https://telegra.ph/file/cda5f4fdb78bbc5f58e48.jpg">
