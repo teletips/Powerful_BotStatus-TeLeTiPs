@@ -28,15 +28,15 @@
             "required": true
         },
        "CHANNEL_OR_GROUP_ID": {
-            "description": "Your channel's or group's Telegram id (Example: -1001246808642",
+            "description": "Your channel's or group's Telegram id (Example: -1001246808642)",
             "required": true
         },
        "MESSAGE_IDS": {
-            "description": "Telegram id(s) of message(s) from your channel or group (Example: 10 11 12 )",
+            "description": "Telegram id(s) of message(s) from your channel or group (Example: 10 11 12)",
             "required": true
         },
         "BOT_ADMIN_IDS": {
-            "description": "Bot admin(s) id(s) (Example: 1357907531 2468097531 3579864213 )",
+            "description": "Bot admin(s) id(s) (Example: 1357907531 2468097531 3579864213)",
         },
     },
     "formation": {
