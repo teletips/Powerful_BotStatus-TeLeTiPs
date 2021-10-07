@@ -4,7 +4,7 @@
     "repository": "https://github.com/teletips/Powerful_BotStatus-TeLeTiPs",
     "keywords": [
         "BotStatus",
-        "How to check your bots are alive or not,
+        "How to check your bots are alive or not",
         "Up or down",
         "Check status of bots",
         "Telegram userbot",
@@ -36,7 +36,7 @@
             "required": true
         },
         "BOT_ADMIN_IDS": {
-            "description": "Bot admin(s) id(s) (Example: 1357907531 2468097531 3579864213)",
+            "description": "Bot admin(s) id(s) (Example: 1357907531 2468097531 3579864213)"
         }
     },
     "formation": {
