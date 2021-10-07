@@ -3,21 +3,14 @@
 <p align="center">
 <a href="https://python.org"><img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python"></a>
 <br>
-    <img src="https://img.shields.io/github/stars/teletips/
-Powerful_BotStatus-TeLeTiPs?style=for-the-badge" alt="Stars">
-    <img src="https://img.shields.io/github/forks/teletips/
-Powerful_BotStatus-TeLeTiPs?style=for-the-badge" alt="Forks">
-    <img src="https://img.shields.io/github/watchers/teletips/
-Powerful_BotStatus-TeLeTiPs?style=for-the-badge" alt="Watchers"> 
+    <img src="https://img.shields.io/github/stars/teletips/Powerful_BotStatus-TeLeTiPs?style=for-the-badge" alt="Stars">
+    <img src="https://img.shields.io/github/forks/teletips/Powerful_BotStatus-TeLeTiPs?style=for-the-badge" alt="Forks">
+    <img src="https://img.shields.io/github/watchers/teletips/Powerful_BotStatus-TeLeTiPs?style=for-the-badge" alt="Watchers"> 
 <br>
-    <img src="https://img.shields.io/github/license/teletips/
-Powerful_BotStatus-TeLeTiPs?style=for-the-badge" alt="License">
-    <img src="https://img.shields.io/github/repo-size/teletips/
-Powerful_BotStatus-TeLeTiPs?style=for-the-badge" alt="Repository Size">
-    <img src="https://img.shields.io/github/contributors/teletips/
-Powerful_BotStatus-TeLeTiPs?style=for-the-badge" alt="Contributors">
-    <img src="https://img.shields.io/github/issues/teletips/
-Powerful_BotStatus-TeLeTiPs?style=for-the-badge" alt="Issues">
+    <img src="https://img.shields.io/github/license/teletips/Powerful_BotStatus-TeLeTiPs?style=for-the-badge" alt="License">
+    <img src="https://img.shields.io/github/repo-size/teletips/Powerful_BotStatus-TeLeTiPs?style=for-the-badge" alt="Repository Size">
+    <img src="https://img.shields.io/github/contributors/teletips/Powerful_BotStatus-TeLeTiPs?style=for-the-badge" alt="Contributors">
+    <img src="https://img.shields.io/github/issues/teletips/Powerful_BotStatus-TeLeTiPs?style=for-the-badge" alt="Issues">
 </p>  
 
 ## Config Vars
