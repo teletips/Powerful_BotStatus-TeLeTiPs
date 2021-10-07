@@ -1,0 +1,53 @@
+{
+    "name": "BotStatus-TeLeTiPs",
+    "description": "",
+    "repository": "https://github.com/teletips/BotStatus-TeLeTiPs",
+    "keywords": [
+        "BotStatus",
+        "How to check your bots are alive or not,
+        "Up or down",
+        "Check status of bots",
+        "Telegram userbot",
+        "Pyrogram userbot"
+    ],
+    "env": {
+        "API_ID": {
+            "description": "Get from my.telegram.org/apps",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get from my.telegram.org/apps",
+            "required": true
+        },
+        "SESSION_NAME": {
+            "description": "A valid Pyrogram session name",
+            "required": true
+        },
+        "BOT_LIST": {
+            "description": "Your bot username list without '@' (Example: teletips1bot teletips2bot teletips3bot)",
+            "required": true
+        },
+       "CHANNEL_OR_GROUP_ID": {
+            "description": "Your channel's or group's Telegram id (Example: -1001246808642",
+            "required": true
+        },
+       "MESSAGE_IDS": {
+            "description": "Telegram id(s) of message(s) from your channel or group (Example: 10 11 12 )",
+            "required": true
+        },
+        "BOT_ADMIN_IDS": {
+            "description": "Bot admin(s) id(s) (Example: 1357907531 2468097531 3579864213 )",
+        },
+    },
+    "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
