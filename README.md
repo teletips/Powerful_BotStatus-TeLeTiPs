@@ -21,6 +21,7 @@
 5. `CHANNEL_OR_GROUP_ID` : Your channel's or group's Telegram id (Example: -1001246808642)
 6. `MESSAGE_ID` : Telegram id of message from your channel or group (Example: 10)
 7. `BOT_ADMIN_IDS` : Bot admin(s) id(s) (Example: 1357907531 2468097531 3579864213) - Not Required!
+8. `TIME_ZONE`: Your time zone (Example: Asia/Kolkata)
 
 <p align="center">
 <img src="https://telegra.ph/file/cda5f4fdb78bbc5f58e48.jpg">
