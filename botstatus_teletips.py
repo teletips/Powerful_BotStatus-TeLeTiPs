@@ -6,11 +6,9 @@
 
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
-from pyrogram.types import Message
 import asyncio
 import datetime
 import pytz
-import os
 
 app = Client(
     api_id = int(os.environ["API_ID"]),
