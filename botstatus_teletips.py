@@ -20,7 +20,7 @@ app = Client(
 TIME_ZONE = os.environ["TIME_ZONE"]
 BOT_LIST = [i.strip() for i in os.environ.get("BOT_LIST").split(' ')]
 CHANNEL_OR_GROUP_ID = int(os.environ["CHANNEL_OR_GROUP_ID"])
-MESSAGE_IDS = [int(i.strip()) for i in os.environ.get("MESSAGE_IDS").split(' ')]
+MESSAGE_ID = int(os.environ["MESSAGE_ID"])
 BOT_ADMIN_IDS = [int(i.strip()) for i in os.environ.get("BOT_ADMIN_IDS").split(' ')]
 
 async def main_teletips():
@@ -55,9 +55,8 @@ async def main_teletips():
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
                 last_update = time.strftime(f"%d %b %Y at %I:%M %p")
                 xxx_teletips += f"\n\n✔️ Last checked on: {last_update} ({TIME_ZONE})\n\n<i>♻️ Updates every 45min - Powered by [Bot Status](https://t.me/teletipsofficialchannel/465)</i>"
-                for MESSAGE_ID in MESSAGE_IDS:
-                    await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xxx_teletips)
-                    print(f"Last checked on: {last_update}")                
+                await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xxx_teletips)
+                print(f"Last checked on: {last_update}")                
                 await asyncio.sleep(2700)
                         
 app.run(main_teletips())
