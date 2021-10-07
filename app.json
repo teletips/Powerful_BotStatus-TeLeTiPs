@@ -37,7 +37,7 @@
         },
         "BOT_ADMIN_IDS": {
             "description": "Bot admin(s) id(s) (Example: 1357907531 2468097531 3579864213)",
-        },
+        }
     },
     "formation": {
     "worker": {
