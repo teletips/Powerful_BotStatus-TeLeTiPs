@@ -9,6 +9,7 @@ from pyrogram.errors import FloodWait
 import asyncio
 import datetime
 import pytz
+import os
 
 app = Client(
     api_id = int(os.environ["API_ID"]),
