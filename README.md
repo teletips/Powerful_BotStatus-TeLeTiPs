@@ -47,7 +47,7 @@
 - [📞 Contact](https://t.me/tele_gram_tips_bot)
 ```
 ##Credits
-- [BotStatus Telegram bot by TeLe TiPs] (https://github.com/teletips/Powerful_BotStatus-TeLeTiPs)
+- [BotStatus Telegram bot by TeLe TiPs](https://github.com/teletips/Powerful_BotStatus-TeLeTiPs)
 ```
 ## Read GNU AFFERO GENERAL PUBLIC LICENSE: 
 [LICENSE](https://github.com/teletips/Powerful_BotStatus-TeLeTiPs/blob/main/LICENSE)
