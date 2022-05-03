@@ -19,8 +19,8 @@
             "description": "Get from my.telegram.org/apps",
             "required": true
         },
-        "SESSION_NAME": {
-            "description": "A valid Pyrogram session name",
+        "SESSION_STRING": {
+            "description": "A valid Pyrogram session string",
             "required": true
         },
         "BOT_LIST": {
