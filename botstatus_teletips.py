@@ -34,11 +34,11 @@ async def main_teletips():
                 for bot in BOT_LIST:
                     try:
                         yyy_teletips = await app.send_message(bot, "/start")
-                        aaa = yyy_teletips.message_id
+                        aaa = yyy_teletips.message.id
                         await asyncio.sleep(10)
                         zzz_teletips = await app.get_history(bot, limit = 1)
                         for ccc in zzz_teletips:
-                            bbb = ccc.message_id
+                            bbb = ccc.message.id
                         if aaa == bbb:
                             xxx_teletips += f"\n\n🤖 **BOT**: @{bot}\n🔴 **STATUS**: down ❌"
                             for bot_admin_id in BOT_ADMIN_IDS:
