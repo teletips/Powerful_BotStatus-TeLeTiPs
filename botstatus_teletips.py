@@ -13,16 +13,15 @@ import os
 
 app = Client(
     name = "botstatus_teletips",
-    api_id = int(os.environ["API_ID"]),
-    api_hash = os.environ["API_HASH"],
-    session_string = os.environ["SESSION_STRING"]
+    api_id = 7436880,
+    api_hash = "09e42655b8fd773801f705b01271a011",
+    session_string = "BQDBUkCga3a4K027MsUZ9NtDuCVqu3KoXQ2jvG9d07rlMzbTAXK3M4iiRWjEuy_SIRAA7Ljhd_qcCFIiDZlppQ5qE90FXhU9iYKW-kK4yI95G5PmDNLroxZdZ03nsoHv_-5DxR4ami0O05OLSXtvs4uHzUei_36uhTO-3Qi-7OrU4vR2zI-XqzacHBfnsC5xexl11TlmzN1UonZOY7LC2vbaYWx6PAfSsnnZXg8mmLQcdZR9p7vW--IUurvDx3ZZYxkZXSOIyo6D64VS5Zeo1KfRhxJRxeo6Dz40XP0j2sOS4NFzXS2Az2M_aZ_JrfBZ9YuW0svWjDr1rDUuKzTyqkQwc-RWAQA"
 )
-TIME_ZONE = os.environ["TIME_ZONE"]
-BOT_LIST = [i.strip() for i in os.environ.get("BOT_LIST").split(' ')]
-CHANNEL_OR_GROUP_ID = int(os.environ["CHANNEL_OR_GROUP_ID"])
-MESSAGE_ID = int(os.environ["MESSAGE_ID"])
-BOT_ADMIN_IDS = [int(i.strip()) for i in os.environ.get("BOT_ADMIN_IDS").split(' ')]
-
+TIME_ZONE = "Asia/Kolkata"
+BOT_LIST = ["CountdownTimerTestBot"]
+CHANNEL_OR_GROUP_ID = -1001539307717
+MESSAGE_ID = 2
+BOT_ADMIN_IDS = 1944344065
 async def main_teletips():
     async with app:
             while True:
@@ -36,20 +35,20 @@ async def main_teletips():
                         yyy_teletips = await app.send_message(bot, "/start")
                         aaa = yyy_teletips.id
                         await asyncio.sleep(10)
-                        zzz_teletips = await app.get_chat_history(bot, limit = 1)
-                        for ccc in zzz_teletips:
+                        zzz_teletips = app.get_chat_history(bot, limit = 1)
+                        async for ccc in zzz_teletips:
                             bbb = ccc.id
                         if aaa == bbb:
                             xxx_teletips += f"\n\n🤖 **BOT**: @{bot}\n🔴 **STATUS**: down ❌"
-                            for bot_admin_id in BOT_ADMIN_IDS:
+                            async for bot_admin_id in BOT_ADMIN_IDS:
                                 try:
                                     await app.send_message(int(bot_admin_id), f"🚨 **Beep! Beep!! @{bot} is down** ❌")
                                 except Exception:
                                     pass
-                            await app.read_history(bot)
+                            await app.read_chat_history(bot)
                         else:
                             xxx_teletips += f"\n\n🤖 **BOT**: @{bot}\n🟢 **STATUS**: alive ✅"
-                            await app.read_history(bot)
+                            await app.read_chat_history(bot)
                     except FloodWait as e:
                         await asyncio.sleep(e.x)            
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
