@@ -12,6 +12,7 @@ import pytz
 import os
 
 app = Client(
+    name = "my_account"
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"],
     session_string = os.environ["SESSION_STRING"]
