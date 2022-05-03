@@ -13,15 +13,15 @@ import os
 
 app = Client(
     name = "botstatus_teletips",
-    api_id = 7436880,
-    api_hash = "09e42655b8fd773801f705b01271a011",
-    session_string = "BQDBUkCga3a4K027MsUZ9NtDuCVqu3KoXQ2jvG9d07rlMzbTAXK3M4iiRWjEuy_SIRAA7Ljhd_qcCFIiDZlppQ5qE90FXhU9iYKW-kK4yI95G5PmDNLroxZdZ03nsoHv_-5DxR4ami0O05OLSXtvs4uHzUei_36uhTO-3Qi-7OrU4vR2zI-XqzacHBfnsC5xexl11TlmzN1UonZOY7LC2vbaYWx6PAfSsnnZXg8mmLQcdZR9p7vW--IUurvDx3ZZYxkZXSOIyo6D64VS5Zeo1KfRhxJRxeo6Dz40XP0j2sOS4NFzXS2Az2M_aZ_JrfBZ9YuW0svWjDr1rDUuKzTyqkQwc-RWAQA"
+    api_id = int(os.environ["API_ID"]),
+    api_hash = "os.environ["API_HASH"],
+    session_string = os.environ["SESSION_NAME"]
 )
-TIME_ZONE = "Asia/Kolkata"
-BOT_LIST = ["CountdownTimerTestBot"]
-CHANNEL_OR_GROUP_ID = -1001539307717
-MESSAGE_ID = 2
-BOT_ADMIN_IDS = 1944344065
+TIME_ZONE = os.environ["TIME_ZONE"]
+BOT_LIST = [i.strip() for i in os.environ.get("BOT_LIST").split(' ')]
+CHANNEL_OR_GROUP_ID = int(os.environ["CHANNEL_OR_GROUP_ID"])
+MESSAGE_ID = int(os.environ["MESSAGE_ID"])
+BOT_ADMIN_IDS = [int(i.strip()) for i in os.environ.get("BOT_ADMIN_IDS").split(' ')]
 async def main_teletips():
     async with app:
             while True:
