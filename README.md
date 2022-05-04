@@ -1,5 +1,5 @@
 <h1 align= center> Powerful_BotStatus-TeLeTiPs</h1>
-<h3 align = center>Easy & powerful bot to check if your all Telegram bots are working or not. This bot status bot updates every 105 minutes & runs for 24x7 hours.</h3>
+<h3 align = center>Easy & powerful bot to check if your all Telegram bots are working or not. This bot status bot refreshes automatically & runs for 24x7 hours.</h3>
 <p align="center">
 <a href="https://python.org"><img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python"></a>
 <br>
@@ -23,10 +23,6 @@
 7. `BOT_ADMIN_IDS` : Bot admin(s) id(s) (Example: 1357907531 2468097531 3579864213) - Not Required!
 8. `TIME_ZONE`: Your time zone (Example: Asia/Kolkata)
 
-<p align="center">
-<img src="https://telegra.ph/file/cda5f4fdb78bbc5f58e48.jpg">
-<p>
- 
 ## Deployment Methods
 
 ### Heroku
